@@ -1,0 +1,116 @@
+/* MAIN! */
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.portfolio {
+    background-color: var(--second-text);
+}
+
+.portfolio-title {
+    display: none;
+}
+
+.button {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: none;
+    background-color: var(--section-team);
+    color: var(--main-text);
+    outline: none;
+    padding: 6px 22px 6px 22px;
+    border-radius: 4px;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--hover-text);
+    color: var(--second-text);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.portfolio-buttons.link {
+    margin: 0px;
+    padding-bottom: 50px;
+    padding-top: 94px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons.link:nth-last-child(n+1) {
+    margin: 0px -8px;
+}
+
+.buttons {
+    margin-left: 8px;
+}
+
+.buttons:first-child {
+    margin-left: 0px;
+}
+
+/* projects */
+
+.projects {
+    display: none;
+}
+
+.project-name {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-text);
+}
+
+.project-text {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--link-text);
+    margin-top: 4px;
+}
+
+.project-list.link {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+    padding-bottom: 94px;
+}
+
+.project-item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.project-item:hover {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card-project-content {
+    padding: 20px 24px;
+    border-right: 1px solid rgba(238, 238, 238, 1);
+    border-bottom: 1px solid rgba(238, 238, 238, 1);
+    border-left: 1px solid rgba(238, 238, 238, 1);    
+}
