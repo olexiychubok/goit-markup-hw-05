@@ -671,6 +671,7 @@ img {
     outline: none;
     padding: 6px 22px 6px 22px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .button:hover,
@@ -744,11 +745,12 @@ img {
     flex-basis: calc(100% / 3 - 30px);
     margin-top: 30px;
     margin-left: 30px;
+    position: relative;
 }
 
 .project-item:hover {
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    outline: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -758,4 +760,59 @@ img {
     border-right: 1px solid rgba(238, 238, 238, 1);
     border-bottom: 1px solid rgba(238, 238, 238, 1);
     border-left: 1px solid rgba(238, 238, 238, 1);    
+}
+
+.card-project-thumb {
+    position: relative;
+    cursor: pointer;
+    /* overflow: hidden; */
+}
+
+.project-hover {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    overflow: hidden;
+    width: 100%;
+    height: 294px;
+}
+
+.project-hover-description {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;    
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--second-text);
+    display: block;
+    content: " ";
+    padding: 63px 24px;
+    max-width: 100%;
+    height: 294px;
+    position: absolute;
+    opacity: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-hover:hover .project-hover-description {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(0);
+    /* overflow: hidden; */
+}
+
+.card-project-thumb:hover .project-hover-description {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(0);
+    /* overflow: hidden; */
 }
